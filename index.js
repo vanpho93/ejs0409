@@ -10,7 +10,7 @@ app.use(express.static('./public'));
 app.get('/', (req, res) => res.render('home'));
 
 app.get('/params', (req, res) => {
-    res.render('params', { a: 100 });
+    res.render('params', { a: 100, arrPerson });
 });
 
 app.get('/a/b', (req, res) => res.render('ab'));
