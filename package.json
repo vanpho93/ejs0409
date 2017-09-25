@@ -8,5 +8,11 @@
   "dependencies": {
     "ejs": "^2.5.7",
     "express": "^4.15.5"
+  },
+  "devDependencies": {
+    "reload": "^2.2.2"
+  },
+  "scripts": {
+    "start": "nodemon index.js -e js,ejs"
   }
 }

@@ -1,5 +1,5 @@
 const express = require('express');
-
+const reload = require('reload');
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -11,4 +11,5 @@ app.get('/', (req, res) => res.render('home'));
 
 app.get('/a/b', (req, res) => res.render('ab'));
 
-app.listen(3000);
+reload(app);
+app.listen(3000, () => console.log('Server start!'));
